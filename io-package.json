@@ -1,0 +1,146 @@
+{
+    "common": {
+        "name": "link",
+        "title": "Link VPN",
+        "desc": {
+            "en": "Create VPN connection via ioBroker",
+            "de": "Erstellen Sie eine VPN-Verbindung über ioBroker",
+            "ru": "Создание VPN-соединения через ioBroker",
+            "pt": "Crie uma conexão VPN via ioBroker",
+            "nl": "Maak een VPN-verbinding via ioBroker",
+            "fr": "Créer une connexion VPN via ioBroker",
+            "it": "Crea una connessione VPN tramite ioBroker",
+            "es": "Crear una conexión VPN a través de ioBroker"
+        },
+        "version": "0.3.6",
+        "news": {
+            "0.3.6": {
+                "en": "The download of SSF from github depending on platform was added",
+                "de": "Der Download von SSF von Github je nach Plattform wurde hinzugefügt",
+                "ru": "Добавлена ​​загрузка SSF из github в зависимости от платформы.",
+                "pt": "O download do SSF do github, dependendo da plataforma, foi adicionado",
+                "nl": "De download van SSF van github, afhankelijk van het platform, is toegevoegd",
+                "fr": "Le téléchargement de SSF de github en fonction de la plate-forme a été ajouté",
+                "it": "È stato aggiunto il download di SSF da github a seconda della piattaforma",
+                "es": "Se agregó la descarga de SSF desde github según la plataforma",
+                "pl": "Pobieranie SSF z github w zależności od platformy zostało dodane"
+            },
+            "0.2.7": {
+                "en": "UDP communication is now supported",
+                "de": "UDP-Kommunikation wird jetzt unterstützt",
+                "ru": "Теперь поддерживается связь UDP",
+                "pt": "A comunicação UDP é agora suportada",
+                "nl": "UDP-communicatie wordt nu ondersteund",
+                "fr": "La communication UDP est maintenant supportée",
+                "it": "La comunicazione UDP è ora supportata",
+                "es": "La comunicación UDP ahora es compatible",
+                "pl": "Komunikacja UDP jest teraz obsługiwana"
+            },
+            "0.2.6": {
+                "en": "Added support of HTTP proxy ",
+                "de": "Unterstützung von HTTP-Proxy hinzugefügt",
+                "ru": "Добавлена ​​поддержка HTTP-прокси",
+                "pt": "Adicionado suporte de proxy HTTP",
+                "nl": "Ondersteuning van HTTP-proxy toegevoegd",
+                "fr": "Ajout du support du proxy HTTP",
+                "it": "Aggiunto supporto del proxy HTTP",
+                "es": "Se agregó soporte de proxy HTTP",
+                "pl": "Dodano obsługę proxy HTTP"
+            },
+            "0.1.3": {
+                "en": "Initial commit",
+                "de": "Erstes Commit",
+                "ru": "Начальное коммит",
+                "pt": "Compromisso inicial",
+                "nl": "Eerste commit",
+                "fr": "Engagement initial",
+                "it": "Commit iniziale",
+                "es": "Compromiso inicial"
+            }
+        },
+        "mode": "daemon",
+        "platform": "Javascript/Node.js",
+        "loglevel": "info",
+        "keywords": [
+            "vpn",
+            "link",
+            "remote access"
+        ],
+        "main": "main.js",
+        "enabled": true,
+        "authors": [
+            "gh-god",
+            "Bluefox <dogafox@gmail.com>"
+        ],
+        "materialize": true,
+        "license": "CC-BY-NC-4.0",
+        "readme": "https://github.com/ioBroker/ioBroker.link/blob/master/README.md",
+        "icon": "link.png",
+        "extIcon": "https://raw.githubusercontent.com/ioBroker/ioBroker.link/master/admin/link.png",
+        "type": "protocols",
+        "dependencies": [
+            {
+                "js-controller": ">=1.2.3"
+            }
+        ],
+        "stopTimeout": 10000
+    },
+    "native": {
+        "name": "",
+        "accessServerURI": "https://iobroker.link",
+        "accessServerPollInterval": 10,
+        "allowedUsers": [],
+        "proxyURI": "",
+        "devices": [
+            {
+                "enabled": true,
+                "name": "ioBroker Admin",
+                "host": "localhost",
+                "protocol": "TCP",
+                "port": 8081
+            },
+            {
+                "enabled": true,
+                "name": "ioBroker Web",
+                "host": "localhost",
+                "protocol": "TCP",
+                "port": 8082
+            }
+        ]
+    },
+    "instanceObjects": [
+        {
+            "_id":  "info",
+            "type": "channel",
+            "common": {
+                "name": "Information"
+            },
+            "native": {}
+        },
+        {
+            "_id":  "info.connection",
+            "type": "state",
+            "common": {
+                "role":  "indicator.connection",
+                "name":  "Connected to cloud",
+                "type":  "string",
+                "read":  true,
+                "write": false
+            },
+            "native": {}
+        },
+        {
+            "_id":  "info.status",
+            "type": "state",
+            "common": {
+                "role":  "text",
+                "name":  "Client status",
+                "desc":  "This text will be send to cloud to indicate the client overall status. Empty is ok. Some text describes error.",
+                "type":  "string",
+                "read":  true,
+                "write": false
+            },
+            "native": {}
+        }
+    ]
+}
