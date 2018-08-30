@@ -77,7 +77,7 @@
         "readme": "https://github.com/ioBroker/ioBroker.link/blob/master/README.md",
         "icon": "link.png",
         "extIcon": "https://raw.githubusercontent.com/ioBroker/ioBroker.link/master/admin/link.png",
-        "type": "protocols",
+        "type": "communication",
         "dependencies": [
             {
                 "js-controller": ">=1.2.3"
