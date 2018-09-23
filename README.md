@@ -15,6 +15,9 @@ This adapter allows secure connection over iobroker.link cloud.
 Proxy can be defined as URI: *http://proxy:8080* or via **HTTPS_PROXY** environment variable.
 
 ## Changelog
+### 0.3.7 (2018-09-23)
+* (bluefox) Do not connect to the cloud if no configuration defined
+
 ### 0.3.6 (2018-06-26)
 * (bluefox) The download of SSF from github depending on platform was added
 

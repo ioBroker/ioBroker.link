@@ -12,8 +12,19 @@
             "it": "Crea una connessione VPN tramite ioBroker",
             "es": "Crear una conexión VPN a través de ioBroker"
         },
-        "version": "0.3.6",
+        "version": "0.3.7",
         "news": {
+            "0.3.7": {
+                "en": "No connection to the cloud if no configuration defined",
+                "de": "Keine Verbindung zur Cloud, wenn keine Konfiguration definiert ist",
+                "ru": "Нет соединения с облаком, если конфигурация не определена",
+                "pt": "Nenhuma conexão com a nuvem se nenhuma configuração definida",
+                "nl": "Geen verbinding met de cloud als geen configuratie is gedefinieerd",
+                "fr": "Aucune connexion au cloud si aucune configuration définie",
+                "it": "Nessuna connessione al cloud se non è stata definita alcuna configurazione",
+                "es": "Sin conexión a la nube si no se definió ninguna configuración",
+                "pl": "Brak połączenia z chmurą, jeśli nie zdefiniowano żadnej konfiguracji"
+            },
             "0.3.6": {
                 "en": "The download of SSF from github depending on platform was added",
                 "de": "Der Download von SSF von Github je nach Plattform wurde hinzugefügt",
