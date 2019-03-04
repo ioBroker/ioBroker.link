@@ -31,7 +31,8 @@
     "ps-tree": "^1.1.0",
     "request": "^2.87.0",
     "ssh2": "^0.6.1",
-    "extract-zip": "^1.6.7"
+    "extract-zip": "^1.6.7",
+    "@iobroker/adapter-core": "^1.0.3"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
@@ -44,8 +45,7 @@
     "browserify": "^16.1.0",
     "vinyl-source-stream": "^2.0.0",
     "mocha": "^6.0.2",
-    "chai": "^4.2.0",
-    "@iobroker/adapter-core": "^1.0.3"
+    "chai": "^4.2.0"
   },
   "bugs": {
     "url": "https://github.com/ioBroker/ioBroker.link/issues"
