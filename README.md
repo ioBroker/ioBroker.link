@@ -15,6 +15,9 @@ This adapter allows secure connection over iobroker.link cloud.
 Proxy can be defined as URI: *http://proxy:8080* or via **HTTPS_PROXY** environment variable.
 
 ## Changelog
+### 0.4.0 (2019-03-10)
+* (bluefox) Made this adapter to be compatible with the new server
+
 ### 0.3.7 (2018-09-23)
 * (bluefox) Do not connect to the cloud if no configuration defined
 
@@ -31,11 +34,11 @@ Proxy can be defined as URI: *http://proxy:8080* or via **HTTPS_PROXY** environm
 * (bluefox) Initial commit
 
 ## License
- Copyright (c) 2018 bluefox <dogafox@gmail.com>, gh-got
+Copyright (c) 2018-2019 bluefox <dogafox@gmail.com>, gh-got
 
- Creative Common Attribution-NonCommercial (CC BY-NC)
+Creative Common Attribution-NonCommercial (CC BY-NC)
 
- http://creativecommons.org/licenses/by-nc/4.0/
+http://creativecommons.org/licenses/by-nc/4.0/
 
 ![CC BY-NC License](https://github.com/GermanBluefox/DashUI/raw/master/images/cc-nc-by.png)
 

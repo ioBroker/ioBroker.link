@@ -12,8 +12,20 @@
             "it": "Crea una connessione VPN tramite ioBroker",
             "es": "Crear una conexión VPN a través de ioBroker"
         },
-        "version": "0.3.7",
+        "version": "0.4.0",
         "news": {
+            "0.4.0": {
+                "en": "Made this adapter to be compatible with the new server",
+                "de": "Dieser Adapter wurde mit dem neuen Server kompatibel gemacht",
+                "ru": "Сделал этот адаптер совместимым с новым сервером",
+                "pt": "Feito este adaptador para ser compatível com o novo servidor",
+                "nl": "Maakte deze adapter compatibel met de nieuwe server",
+                "fr": "Fait cet adaptateur pour être compatible avec le nouveau serveur",
+                "it": "Ha reso questo adattatore compatibile con il nuovo server",
+                "es": "Hecho este adaptador para ser compatible con el nuevo servidor.",
+                "pl": "Ten adapter był zgodny z nowym serwerem",
+                "zh-cn": "使此适配器与新服务器兼容"
+            },
             "0.3.7": {
                 "en": "No connection to the cloud if no configuration defined",
                 "de": "Keine Verbindung zur Cloud, wenn keine Konfiguration definiert ist",
@@ -83,6 +95,7 @@
             "gh-god",
             "Bluefox <dogafox@gmail.com>"
         ],
+        "compact": true,
         "materialize": true,
         "license": "CC-BY-NC-4.0",
         "readme": "https://github.com/ioBroker/ioBroker.link/blob/master/README.md",
