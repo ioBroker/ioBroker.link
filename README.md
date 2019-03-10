@@ -2,7 +2,7 @@
 # ioBroker.link
 ===================
 
-[![NPM version](http://img.shields.io/npm/v/iobroker.link.svg)](https://www.npmjs.com/package/iobroker.link)
+![Number of Installations](http://iobroker.live/badges/link-installed.svg) ![Number of Installations](http://iobroker.live/badges/link-stable.svg) [![NPM version](http://img.shields.io/npm/v/iobroker.link.svg)](https://www.npmjs.com/package/iobroker.link)
 [![Downloads](https://img.shields.io/npm/dm/iobroker.link.svg)](https://www.npmjs.com/package/iobroker.link)
 
 [![NPM](https://nodei.co/npm/iobroker.link.png?downloads=true)](https://nodei.co/npm/iobroker.link/)
