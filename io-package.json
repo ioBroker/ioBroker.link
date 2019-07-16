@@ -12,8 +12,32 @@
             "it": "Crea una connessione VPN tramite ioBroker",
             "es": "Crear una conexión VPN a través de ioBroker"
         },
-        "version": "0.4.0",
+        "version": "0.4.4",
         "news": {
+            "0.4.4": {
+                "en": "Closing tunnels in case server considers an agent as offline\nFixed timeout to query active connection status",
+                "de": "Tunnel schließen, falls der Server einen Agenten als offline betrachtet\nZeitüberschreitung beim Abfragen des aktiven Verbindungsstatus behoben",
+                "ru": "Закрытие туннелей в случае, если сервер считает агента автономным\nИсправлено время ожидания запроса активного состояния соединения",
+                "pt": "Fechando túneis no caso de o servidor considerar um agente como off-line\nTempo limite fixo para consultar o status da conexão ativa",
+                "nl": "Tunnels sluiten als een server een agent als offline beschouwt\nVaste time-out om actieve verbindingsstatus op te vragen",
+                "fr": "La fermeture de tunnels dans le cas où le serveur considère un agent comme étant hors ligne\nDélai d'expiration fixé pour interroger l'état de la connexion active",
+                "it": "Chiudere i tunnel nel caso in cui il server consideri un agente come offline\nRisolto il timeout per interrogare lo stato della connessione attiva",
+                "es": "Cierre de túneles en caso de que el servidor considere a un agente como fuera de línea\nTiempo de espera fijo para consultar el estado de conexión activa",
+                "pl": "Zamykanie tuneli w przypadku serwera traktuje agenta jako offline\nNaprawiono limit czasu na zapytanie o status aktywnego połączenia",
+                "zh-cn": "在案例服务器中关闭隧道会将代理视为脱机\n修复了查询活动连接状态的超时"
+            },
+            "0.4.2": {
+                "en": "agents will report own version by registration",
+                "de": "Agenten melden ihre eigene Version bei der Registrierung",
+                "ru": "Агенты сообщат свою версию при регистрации",
+                "pt": "agentes informarão a própria versão por registro",
+                "nl": "agenten rapporteren hun eigen versie door zich te registreren",
+                "fr": "les agents rapporteront leur propre version par enregistrement",
+                "it": "gli agenti riporteranno la propria versione mediante la registrazione",
+                "es": "Los agentes informarán de su propia versión mediante el registro.",
+                "pl": "agenci będą zgłaszać własną wersję poprzez rejestrację",
+                "zh-cn": "代理商将通过注册报告自己的版本"
+            },
             "0.4.0": {
                 "en": "Made this adapter to be compatible with the new server",
                 "de": "Dieser Adapter wurde mit dem neuen Server kompatibel gemacht",
