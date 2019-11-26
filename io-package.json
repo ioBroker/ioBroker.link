@@ -12,8 +12,32 @@
             "it": "Crea una connessione VPN tramite ioBroker",
             "es": "Crear una conexión VPN a través de ioBroker"
         },
-        "version": "0.4.4",
+        "version": "0.5.2",
         "news": {
+            "0.5.2": {
+                "en": "Added user enability",
+                "de": "User Enability hinzugefügt",
+                "ru": "Добавлена возможность пользователя",
+                "pt": "Maior capacidade do usuário",
+                "nl": "Gebruikers inschakelen toegevoegd",
+                "fr": "Ajout de la facilité d'utilisation",
+                "it": "Aggiunta l'abilità dell'utente",
+                "es": "Alta capacidad de uso del usuario",
+                "pl": "Dodano możliwość użytkownika",
+                "zh-cn": "增强了用户功能"
+            },
+            "0.4.9": {
+                "en": "notifications about established and closed connections can be configured to be sent via a telegram adapter instance",
+                "de": "Benachrichtigungen über aufgebaute und geschlossene Verbindungen können so konfiguriert werden, dass sie über Telegram gesendet werden",
+                "ru": "настройки для отправки через Telegram уведомлений об установленных и закрытых соединениях",
+                "pt": "notificações sobre conexões estabelecidas e fechadas podem ser configuradas para serem enviadas por uma instância do adaptador de telegrama",
+                "nl": "meldingen over bestaande en gesloten verbindingen kunnen worden geconfigureerd om te worden verzonden via een instantie van een telegramadapter",
+                "fr": "les notifications relatives aux connexions établies et fermées peuvent être configurées pour être envoyées via une instance d'adaptateur de télégramme",
+                "it": "le notifiche sulle connessioni stabilite e chiuse possono essere configurate per essere inviate tramite un'istanza dell'adattatore del telegramma",
+                "es": "las notificaciones sobre conexiones establecidas y cerradas pueden configurarse para enviarse a través de una instancia de adaptador de telegrama",
+                "pl": "powiadomienia o nawiązanych i zamkniętych połączeniach można skonfigurować do wysyłania za pośrednictwem instancji adaptera telegramu",
+                "zh-cn": "可以将有关已建立和已关闭连接的通知配置为通过电报适配器实例发送"
+            },
             "0.4.4": {
                 "en": "Closing tunnels in case server considers an agent as offline\nFixed timeout to query active connection status",
                 "de": "Tunnel schließen, falls der Server einen Agenten als offline betrachtet\nZeitüberschreitung beim Abfragen des aktiven Verbindungsstatus behoben",
