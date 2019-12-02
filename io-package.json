@@ -12,8 +12,32 @@
             "it": "Crea una connessione VPN tramite ioBroker",
             "es": "Crear una conexión VPN a través de ioBroker"
         },
-        "version": "0.5.2",
+        "version": "0.5.5",
         "news": {
+            "0.5.5": {
+                "en": "Multi-factor connection approval\nImplemented the acknowledgment via telegram",
+                "de": "Multi-Faktor-Verbindungsgenehmigung\nQuittierung per Telegramm implementiert",
+                "ru": "Многофакторное утверждение соединения\nРеализовано подтверждение через телеграмму",
+                "pt": "Aprovação de conexão multifatorial\nImplementado o reconhecimento via telegrama",
+                "nl": "Goedkeuring van meerdere factoren\nImplementatie van de bevestiging via telegram",
+                "fr": "Approbation de connexion multi-facteurs\nImplémenter l'accusé de réception par télégramme",
+                "it": "Approvazione della connessione a più fattori\nImplementato il riconoscimento tramite telegramma",
+                "es": "Aprobación de conexión multifactor\nImplementado el reconocimiento por telegrama",
+                "pl": "Zatwierdzenie połączenia wieloskładnikowego\nWdrożono potwierdzenie za pomocą telegramu",
+                "zh-cn": "多因素连接批准\n通过电报进行确认"
+            },
+            "0.5.3": {
+                "en": "iobroker.link has become even more secure. With this update it is possble to require an explicit connection confirmation. Configure a Telegram instance to send a confirmation request to, tick the checkbox \"Request confirmation via Telegram\" and explicitly allow or deny incoming connection requests. Prerequisite: a preconfigured Telegram instance V1.4.4 or higher.",
+                "de": "iobroker.link ist noch sicherer geworden. Bei diesem Update ist möglicherweise eine explizite Verbindungsbestätigung erforderlich. Konfigurieren Sie eine Telegramm-Instanz, an die eine Bestätigungsanforderung gesendet werden soll, aktivieren Sie das Kontrollkästchen \"Bestätigung per Telegramm anfordern\" und lassen Sie eingehende Verbindungsanforderungen explizit zu oder lehnen Sie sie ab. Voraussetzung: eine vorkonfigurierte Telegramm-Instanz ab V1.4.4.",
+                "ru": "iobroker.link стал еще более безопасным. С этим обновлением возможно требовать явного подтверждения соединения. Настройте экземпляр Telegram для отправки запроса подтверждения, установите флажок «Запросить подтверждение через Telegram» и явно разрешите или отклоните входящие запросы на подключение. Предварительное условие: предварительно сконфигурированный экземпляр Telegram V1.4.4 или выше.",
+                "pt": "O iobroker.link tornou-se ainda mais seguro. Com esta atualização, é possível exigir uma confirmação explícita da conexão. Configure uma instância do Telegram para enviar uma solicitação de confirmação, marque a caixa de seleção \"Solicitar confirmação via Telegram\" e permita ou negue explicitamente as solicitações de conexão recebidas. Pré-requisito: uma instância do Telegram pré-configurada V1.4.4 ou superior.",
+                "nl": "iobroker.link is nog veiliger geworden. Met deze update is het mogelijk om een expliciete bevestiging van de verbinding te vereisen. Configureer een Telegram-instantie om een bevestigingsverzoek naar te sturen, vink het selectievakje \"Verzoek om bevestiging via Telegram\" aan en sta expliciet toe of weiger inkomende verbindingsverzoeken. Voorwaarde: een vooraf geconfigureerde Telegram-instantie V1.4.4 of hoger.",
+                "fr": "iobroker.link est devenu encore plus sécurisé. Avec cette mise à jour, il est possible de demander une confirmation de connexion explicite. Configurez une instance de Telegram à laquelle envoyer une demande de confirmation, cochez la case \"Demander confirmation via Telegram\" et autorisez ou refusez explicitement les demandes de connexion entrantes. Prérequis: une instance Telegram préconfigurée à partir de V1.4.4.",
+                "it": "iobroker.link è diventato ancora più sicuro. Con questo aggiornamento è possibile richiedere una conferma esplicita della connessione. Configurare un'istanza di Telegram a cui inviare una richiesta di conferma, selezionare la casella di controllo \"Richiedi conferma tramite Telegram\" e consentire o rifiutare esplicitamente le richieste di connessione in arrivo. Prerequisito: un'istanza di Telegram preconfigurata V1.4.4 o successiva.",
+                "es": "iobroker.link se ha vuelto aún más seguro. Con esta actualización es posible requerir una confirmación de conexión explícita. Configure una instancia de Telegram para enviar una solicitud de confirmación, marque la casilla de verificación \"Solicitar confirmación a través de Telegram\" y permita o rechace explícitamente las solicitudes de conexión entrantes. Requisito previo: una instancia de Telegram preconfigurada V1.4.4 o superior.",
+                "pl": "iobroker.link stał się jeszcze bardziej bezpieczny. Dzięki tej aktualizacji można wymagać wyraźnego potwierdzenia połączenia. Skonfiguruj instancję Telegram, aby wysyłała żądanie potwierdzenia, zaznacz pole wyboru „Żądaj potwierdzenia przez Telegram” i jawnie zezwól lub odmów przychodzące żądania połączenia. Warunek: wstępnie skonfigurowana instancja Telegramu wer. 1.4.4 lub nowsza.",
+                "zh-cn": "iobroker.link变得更加安全。通过此更新，可能需要明确的连接确认。配置一个Telegram实例以向其发送确认请求，选中“通过Telegram请求确认”复选框，并明确允许或拒绝传入的连接请求。先决条件：预配置的Telegram实例V1.4.4或更高版本。"
+            },
             "0.5.2": {
                 "en": "Added user enability",
                 "de": "User Enability hinzugefügt",
@@ -73,60 +97,6 @@
                 "es": "Hecho este adaptador para ser compatible con el nuevo servidor.",
                 "pl": "Ten adapter był zgodny z nowym serwerem",
                 "zh-cn": "使此适配器与新服务器兼容"
-            },
-            "0.3.7": {
-                "en": "No connection to the cloud if no configuration defined",
-                "de": "Keine Verbindung zur Cloud, wenn keine Konfiguration definiert ist",
-                "ru": "Нет соединения с облаком, если конфигурация не определена",
-                "pt": "Nenhuma conexão com a nuvem se nenhuma configuração definida",
-                "nl": "Geen verbinding met de cloud als geen configuratie is gedefinieerd",
-                "fr": "Aucune connexion au cloud si aucune configuration définie",
-                "it": "Nessuna connessione al cloud se non è stata definita alcuna configurazione",
-                "es": "Sin conexión a la nube si no se definió ninguna configuración",
-                "pl": "Brak połączenia z chmurą, jeśli nie zdefiniowano żadnej konfiguracji"
-            },
-            "0.3.6": {
-                "en": "The download of SSF from github depending on platform was added",
-                "de": "Der Download von SSF von Github je nach Plattform wurde hinzugefügt",
-                "ru": "Добавлена ​​загрузка SSF из github в зависимости от платформы.",
-                "pt": "O download do SSF do github, dependendo da plataforma, foi adicionado",
-                "nl": "De download van SSF van github, afhankelijk van het platform, is toegevoegd",
-                "fr": "Le téléchargement de SSF de github en fonction de la plate-forme a été ajouté",
-                "it": "È stato aggiunto il download di SSF da github a seconda della piattaforma",
-                "es": "Se agregó la descarga de SSF desde github según la plataforma",
-                "pl": "Pobieranie SSF z github w zależności od platformy zostało dodane"
-            },
-            "0.2.7": {
-                "en": "UDP communication is now supported",
-                "de": "UDP-Kommunikation wird jetzt unterstützt",
-                "ru": "Теперь поддерживается связь UDP",
-                "pt": "A comunicação UDP é agora suportada",
-                "nl": "UDP-communicatie wordt nu ondersteund",
-                "fr": "La communication UDP est maintenant supportée",
-                "it": "La comunicazione UDP è ora supportata",
-                "es": "La comunicación UDP ahora es compatible",
-                "pl": "Komunikacja UDP jest teraz obsługiwana"
-            },
-            "0.2.6": {
-                "en": "Added support of HTTP proxy ",
-                "de": "Unterstützung von HTTP-Proxy hinzugefügt",
-                "ru": "Добавлена ​​поддержка HTTP-прокси",
-                "pt": "Adicionado suporte de proxy HTTP",
-                "nl": "Ondersteuning van HTTP-proxy toegevoegd",
-                "fr": "Ajout du support du proxy HTTP",
-                "it": "Aggiunto supporto del proxy HTTP",
-                "es": "Se agregó soporte de proxy HTTP",
-                "pl": "Dodano obsługę proxy HTTP"
-            },
-            "0.1.3": {
-                "en": "Initial commit",
-                "de": "Erstes Commit",
-                "ru": "Начальное коммит",
-                "pt": "Compromisso inicial",
-                "nl": "Eerste commit",
-                "fr": "Engagement initial",
-                "it": "Commit iniziale",
-                "es": "Compromiso inicial"
             }
         },
         "mode": "daemon",
@@ -161,6 +131,8 @@
         "name": "",
         "accessServerURI": "https://iobroker.link",
         "accessServerPollInterval": 10,
+        "telegramAsk": false,
+        "telegramInstance": "",
         "allowedUsers": [],
         "proxyURI": "",
         "devices": [

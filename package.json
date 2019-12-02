@@ -1,7 +1,7 @@
 {
   "name": "iobroker.link",
   "description": "Create VPN connection via ioBroker.link server",
-  "version": "0.5.2",
+  "version": "0.5.5",
   "author": "Bluefox <dogafox@gmail.com>",
   "contributors": [
     "Bluefox <dogafox@gmail.com>",
