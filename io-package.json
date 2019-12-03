@@ -12,9 +12,9 @@
             "it": "Crea una connessione VPN tramite ioBroker",
             "es": "Crear una conexión VPN a través de ioBroker"
         },
-        "version": "0.5.5",
+        "version": "0.5.6",
         "news": {
-            "0.5.5": {
+            "0.5.6": {
                 "en": "Multi-factor connection approval\nImplemented the acknowledgment via telegram",
                 "de": "Multi-Faktor-Verbindungsgenehmigung\nQuittierung per Telegramm implementiert",
                 "ru": "Многофакторное утверждение соединения\nРеализовано подтверждение через телеграмму",
