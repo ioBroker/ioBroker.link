@@ -12,8 +12,56 @@
             "it": "Crea una connessione VPN tramite ioBroker",
             "es": "Crear una conexión VPN a través de ioBroker"
         },
-        "version": "0.5.6",
+        "version": "0.5.10",
         "news": {
+            "0.5.10": {
+                "en": "Ignore errors at 4:00 because of the server restart",
+                "de": "Ignorieren Sie Fehler um 4:00 Uhr aufgrund des Neustarts des Servers",
+                "ru": "Игнорировать ошибки в 4:00 из-за перезапуска сервера",
+                "pt": "Ignorar erros às 4:00 devido ao reinício do servidor",
+                "nl": "Negeer fouten om 4:00 uur omdat de server opnieuw is opgestart",
+                "fr": "Ignorer les erreurs à 4h00 en raison du redémarrage du serveur",
+                "it": "Ignora gli errori alle 4:00 a causa del riavvio del server",
+                "es": "Ignore los errores a las 4:00 debido al reinicio del servidor",
+                "pl": "Zignoruj błędy o 4:00 z powodu restartu serwera",
+                "zh-cn": "由于服务器重启，忽略了4:00的错误"
+            },
+            "0.5.9": {
+                "en": "added support for http endpoint configuration",
+                "de": "Unterstützung für die Konfiguration von http-Endpunkten hinzugefügt",
+                "ru": "добавлена поддержка конфигурации конечной точки http",
+                "pt": "suporte adicionado para configuração de terminal http",
+                "nl": "ondersteuning toegevoegd voor http-eindpuntconfiguratie",
+                "fr": "prise en charge supplémentaire de la configuration du point de terminaison http",
+                "it": "aggiunto supporto per la configurazione dell'endpoint http",
+                "es": "Soporte agregado para la configuración del punto final http",
+                "pl": "dodano obsługę konfiguracji punktu końcowego http",
+                "zh-cn": "添加了对HTTP端点配置的支持"
+            },
+            "0.5.8": {
+                "en": "disabled devices are excluded from registration",
+                "de": "deaktivierte Geräte sind von der Registrierung ausgeschlossen",
+                "ru": "отключенные устройства исключаются из регистрации",
+                "pt": "dispositivos desativados são excluídos do registro",
+                "nl": "uitgeschakelde apparaten zijn uitgesloten van registratie",
+                "fr": "les appareils désactivés sont exclus de l'enregistrement",
+                "it": "i dispositivi disabilitati sono esclusi dalla registrazione",
+                "es": "los dispositivos deshabilitados están excluidos del registro",
+                "pl": "wyłączone urządzenia są wyłączone z rejestracji",
+                "zh-cn": "禁用的设备不注册"
+            },
+            "0.5.7": {
+                "en": "telegram notifications and connection approval fixed",
+                "de": "Telegrammbenachrichtigungen und Verbindungsfreigabe behoben",
+                "ru": "исправлены уведомления о телеграмме и подтверждение соединения",
+                "pt": "notificações de telegrama e aprovação de conexão corrigidas",
+                "nl": "telegrammeldingen en verbindingsgoedkeuring vastgesteld",
+                "fr": "notifications de télégramme et approbation de connexion corrigées",
+                "it": "notifiche del telegramma e approvazione della connessione fisse",
+                "es": "notificaciones de telegramas y aprobación de conexión fijadas",
+                "pl": "naprawiono powiadomienia telegramowe i zatwierdzenie połączenia",
+                "zh-cn": "电报通知和连接批准已修复"
+            },
             "0.5.6": {
                 "en": "Multi-factor connection approval\nImplemented the acknowledgment via telegram",
                 "de": "Multi-Faktor-Verbindungsgenehmigung\nQuittierung per Telegramm implementiert",
