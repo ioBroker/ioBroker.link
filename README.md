@@ -57,7 +57,7 @@ A connection to local devices supporting HTTP protocol is made via the browser o
 ### My local device supports only TCP/UDP protocol. Is a connection to TCP/UDP devices also possible?
 Yes. In order to connect to local TCP/UDP devices please use ioBroker.link-box: https://www.npmjs.com/package/iobroker.link-box
 
-### How do I grant an access to my local ioBroker installation?
+### How do I grant access to my local ioBroker installation?
 Anyone who should be granted access to a local ioBroker installation has to be explicitly configured in the ioBroker.link adapter settings. No one has access by default. That means that you also have to configure yourself in order to be able to connect to your own local ioBroker installation.
 
 ### How and where do I create the user that I'd like to grant the access to my local installation?
@@ -85,7 +85,10 @@ Even this simple service requires infrastructure running around the clock and pr
 At the moment only a single connection can be opened to a local ioBroker installation. That means if multiple users are granted access permissions to a local installation only one user at a time is able to connect to. Also the only connection per user is allowed. That means the same user, granted access permission to multiple local installations, can access only one installation at a time.
 
 ### How can I track who and when has accessed my local installation?
-All requested connections' meta data is persisted and can be viewed under https://iobroker.link.
+All requested connections' metadata is persisted and can be viewed under https://iobroker.link.
+
+### Which ports must be available in the firewall?
+Following ports on iobroker.link server must be reachable: 5000-5100 (outbound)
 
 ## Adapter configuration :: Main Settings
 
