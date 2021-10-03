@@ -2,6 +2,9 @@
     "common": {
         "name": "link",
         "title": "Link VPN",
+        "titleLang": {
+            "en": "Link VPN"
+        },
         "desc": {
             "en": "Create VPN connection via ioBroker",
             "de": "Erstellen Sie eine VPN-Verbindung über ioBroker",
@@ -12,8 +15,20 @@
             "it": "Crea una connessione VPN tramite ioBroker",
             "es": "Crear una conexión VPN a través de ioBroker"
         },
-        "version": "0.5.10",
+        "version": "0.5.11",
         "news": {
+            "0.5.11": {
+                "en": "Fixed the type of `info.connection` state",
+                "de": "Der Typ des `info.connection`-Status wurde korrigiert",
+                "ru": "Исправлен тип состояния `info.connection`",
+                "pt": "Corrigido o tipo de estado `info.connection`",
+                "nl": "Het type `info.connection`-status gerepareerd",
+                "fr": "Correction du type d'état `info.connection`",
+                "it": "Risolto il tipo di stato \"info.connection\"",
+                "es": "Se corrigió el tipo de estado `info.connection`",
+                "pl": "Poprawiono typ stanu `info.connection`",
+                "zh-cn": "修复了 `info.connection` 状态的类型"
+            },
             "0.5.10": {
                 "en": "Ignore errors at 4:00 because of the server restart",
                 "de": "Ignorieren Sie Fehler um 4:00 Uhr aufgrund des Neustarts des Servers",
@@ -155,12 +170,15 @@
             "link",
             "remote access"
         ],
+        "connectionType": "cloud",
+        "dataSource": "push",
         "main": "main.js",
         "enabled": true,
         "authors": [
             "gh-god",
             "Bluefox <dogafox@gmail.com>"
         ],
+        "restartSchedule": "0 4 * * *",
         "compact": true,
         "materialize": true,
         "license": "CC-BY-NC-4.0",
@@ -215,7 +233,7 @@
             "common": {
                 "role":  "indicator.connection",
                 "name":  "Connected to cloud",
-                "type":  "string",
+                "type":  "boolean",
                 "read":  true,
                 "write": false
             },
