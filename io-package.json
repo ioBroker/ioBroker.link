@@ -1,256 +1,197 @@
 {
-    "common": {
-        "name": "link",
-        "title": "Link VPN",
-        "titleLang": {
-            "en": "Link VPN"
-        },
-        "desc": {
-            "en": "Create VPN connection via ioBroker",
-            "de": "Erstellen Sie eine VPN-Verbindung über ioBroker",
-            "ru": "Создание VPN-соединения через ioBroker",
-            "pt": "Crie uma conexão VPN via ioBroker",
-            "nl": "Maak een VPN-verbinding via ioBroker",
-            "fr": "Créer une connexion VPN via ioBroker",
-            "it": "Crea una connessione VPN tramite ioBroker",
-            "es": "Crear una conexión VPN a través de ioBroker"
-        },
-        "version": "0.5.11",
-        "news": {
-            "0.5.11": {
-                "en": "Fixed the type of `info.connection` state",
-                "de": "Der Typ des `info.connection`-Status wurde korrigiert",
-                "ru": "Исправлен тип состояния `info.connection`",
-                "pt": "Corrigido o tipo de estado `info.connection`",
-                "nl": "Het type `info.connection`-status gerepareerd",
-                "fr": "Correction du type d'état `info.connection`",
-                "it": "Risolto il tipo di stato \"info.connection\"",
-                "es": "Se corrigió el tipo de estado `info.connection`",
-                "pl": "Poprawiono typ stanu `info.connection`",
-                "zh-cn": "修复了 `info.connection` 状态的类型"
-            },
-            "0.5.10": {
-                "en": "Ignore errors at 4:00 because of the server restart",
-                "de": "Ignorieren Sie Fehler um 4:00 Uhr aufgrund des Neustarts des Servers",
-                "ru": "Игнорировать ошибки в 4:00 из-за перезапуска сервера",
-                "pt": "Ignorar erros às 4:00 devido ao reinício do servidor",
-                "nl": "Negeer fouten om 4:00 uur omdat de server opnieuw is opgestart",
-                "fr": "Ignorer les erreurs à 4h00 en raison du redémarrage du serveur",
-                "it": "Ignora gli errori alle 4:00 a causa del riavvio del server",
-                "es": "Ignore los errores a las 4:00 debido al reinicio del servidor",
-                "pl": "Zignoruj błędy o 4:00 z powodu restartu serwera",
-                "zh-cn": "由于服务器重启，忽略了4:00的错误"
-            },
-            "0.5.9": {
-                "en": "added support for http endpoint configuration",
-                "de": "Unterstützung für die Konfiguration von http-Endpunkten hinzugefügt",
-                "ru": "добавлена поддержка конфигурации конечной точки http",
-                "pt": "suporte adicionado para configuração de terminal http",
-                "nl": "ondersteuning toegevoegd voor http-eindpuntconfiguratie",
-                "fr": "prise en charge supplémentaire de la configuration du point de terminaison http",
-                "it": "aggiunto supporto per la configurazione dell'endpoint http",
-                "es": "Soporte agregado para la configuración del punto final http",
-                "pl": "dodano obsługę konfiguracji punktu końcowego http",
-                "zh-cn": "添加了对HTTP端点配置的支持"
-            },
-            "0.5.8": {
-                "en": "disabled devices are excluded from registration",
-                "de": "deaktivierte Geräte sind von der Registrierung ausgeschlossen",
-                "ru": "отключенные устройства исключаются из регистрации",
-                "pt": "dispositivos desativados são excluídos do registro",
-                "nl": "uitgeschakelde apparaten zijn uitgesloten van registratie",
-                "fr": "les appareils désactivés sont exclus de l'enregistrement",
-                "it": "i dispositivi disabilitati sono esclusi dalla registrazione",
-                "es": "los dispositivos deshabilitados están excluidos del registro",
-                "pl": "wyłączone urządzenia są wyłączone z rejestracji",
-                "zh-cn": "禁用的设备不注册"
-            },
-            "0.5.7": {
-                "en": "telegram notifications and connection approval fixed",
-                "de": "Telegrammbenachrichtigungen und Verbindungsfreigabe behoben",
-                "ru": "исправлены уведомления о телеграмме и подтверждение соединения",
-                "pt": "notificações de telegrama e aprovação de conexão corrigidas",
-                "nl": "telegrammeldingen en verbindingsgoedkeuring vastgesteld",
-                "fr": "notifications de télégramme et approbation de connexion corrigées",
-                "it": "notifiche del telegramma e approvazione della connessione fisse",
-                "es": "notificaciones de telegramas y aprobación de conexión fijadas",
-                "pl": "naprawiono powiadomienia telegramowe i zatwierdzenie połączenia",
-                "zh-cn": "电报通知和连接批准已修复"
-            },
-            "0.5.6": {
-                "en": "Multi-factor connection approval\nImplemented the acknowledgment via telegram",
-                "de": "Multi-Faktor-Verbindungsgenehmigung\nQuittierung per Telegramm implementiert",
-                "ru": "Многофакторное утверждение соединения\nРеализовано подтверждение через телеграмму",
-                "pt": "Aprovação de conexão multifatorial\nImplementado o reconhecimento via telegrama",
-                "nl": "Goedkeuring van meerdere factoren\nImplementatie van de bevestiging via telegram",
-                "fr": "Approbation de connexion multi-facteurs\nImplémenter l'accusé de réception par télégramme",
-                "it": "Approvazione della connessione a più fattori\nImplementato il riconoscimento tramite telegramma",
-                "es": "Aprobación de conexión multifactor\nImplementado el reconocimiento por telegrama",
-                "pl": "Zatwierdzenie połączenia wieloskładnikowego\nWdrożono potwierdzenie za pomocą telegramu",
-                "zh-cn": "多因素连接批准\n通过电报进行确认"
-            },
-            "0.5.3": {
-                "en": "iobroker.link has become even more secure. With this update it is possble to require an explicit connection confirmation. Configure a Telegram instance to send a confirmation request to, tick the checkbox \"Request confirmation via Telegram\" and explicitly allow or deny incoming connection requests. Prerequisite: a preconfigured Telegram instance V1.4.4 or higher.",
-                "de": "iobroker.link ist noch sicherer geworden. Bei diesem Update ist möglicherweise eine explizite Verbindungsbestätigung erforderlich. Konfigurieren Sie eine Telegramm-Instanz, an die eine Bestätigungsanforderung gesendet werden soll, aktivieren Sie das Kontrollkästchen \"Bestätigung per Telegramm anfordern\" und lassen Sie eingehende Verbindungsanforderungen explizit zu oder lehnen Sie sie ab. Voraussetzung: eine vorkonfigurierte Telegramm-Instanz ab V1.4.4.",
-                "ru": "iobroker.link стал еще более безопасным. С этим обновлением возможно требовать явного подтверждения соединения. Настройте экземпляр Telegram для отправки запроса подтверждения, установите флажок «Запросить подтверждение через Telegram» и явно разрешите или отклоните входящие запросы на подключение. Предварительное условие: предварительно сконфигурированный экземпляр Telegram V1.4.4 или выше.",
-                "pt": "O iobroker.link tornou-se ainda mais seguro. Com esta atualização, é possível exigir uma confirmação explícita da conexão. Configure uma instância do Telegram para enviar uma solicitação de confirmação, marque a caixa de seleção \"Solicitar confirmação via Telegram\" e permita ou negue explicitamente as solicitações de conexão recebidas. Pré-requisito: uma instância do Telegram pré-configurada V1.4.4 ou superior.",
-                "nl": "iobroker.link is nog veiliger geworden. Met deze update is het mogelijk om een expliciete bevestiging van de verbinding te vereisen. Configureer een Telegram-instantie om een bevestigingsverzoek naar te sturen, vink het selectievakje \"Verzoek om bevestiging via Telegram\" aan en sta expliciet toe of weiger inkomende verbindingsverzoeken. Voorwaarde: een vooraf geconfigureerde Telegram-instantie V1.4.4 of hoger.",
-                "fr": "iobroker.link est devenu encore plus sécurisé. Avec cette mise à jour, il est possible de demander une confirmation de connexion explicite. Configurez une instance de Telegram à laquelle envoyer une demande de confirmation, cochez la case \"Demander confirmation via Telegram\" et autorisez ou refusez explicitement les demandes de connexion entrantes. Prérequis: une instance Telegram préconfigurée à partir de V1.4.4.",
-                "it": "iobroker.link è diventato ancora più sicuro. Con questo aggiornamento è possibile richiedere una conferma esplicita della connessione. Configurare un'istanza di Telegram a cui inviare una richiesta di conferma, selezionare la casella di controllo \"Richiedi conferma tramite Telegram\" e consentire o rifiutare esplicitamente le richieste di connessione in arrivo. Prerequisito: un'istanza di Telegram preconfigurata V1.4.4 o successiva.",
-                "es": "iobroker.link se ha vuelto aún más seguro. Con esta actualización es posible requerir una confirmación de conexión explícita. Configure una instancia de Telegram para enviar una solicitud de confirmación, marque la casilla de verificación \"Solicitar confirmación a través de Telegram\" y permita o rechace explícitamente las solicitudes de conexión entrantes. Requisito previo: una instancia de Telegram preconfigurada V1.4.4 o superior.",
-                "pl": "iobroker.link stał się jeszcze bardziej bezpieczny. Dzięki tej aktualizacji można wymagać wyraźnego potwierdzenia połączenia. Skonfiguruj instancję Telegram, aby wysyłała żądanie potwierdzenia, zaznacz pole wyboru „Żądaj potwierdzenia przez Telegram” i jawnie zezwól lub odmów przychodzące żądania połączenia. Warunek: wstępnie skonfigurowana instancja Telegramu wer. 1.4.4 lub nowsza.",
-                "zh-cn": "iobroker.link变得更加安全。通过此更新，可能需要明确的连接确认。配置一个Telegram实例以向其发送确认请求，选中“通过Telegram请求确认”复选框，并明确允许或拒绝传入的连接请求。先决条件：预配置的Telegram实例V1.4.4或更高版本。"
-            },
-            "0.5.2": {
-                "en": "Added user enability",
-                "de": "User Enability hinzugefügt",
-                "ru": "Добавлена возможность пользователя",
-                "pt": "Maior capacidade do usuário",
-                "nl": "Gebruikers inschakelen toegevoegd",
-                "fr": "Ajout de la facilité d'utilisation",
-                "it": "Aggiunta l'abilità dell'utente",
-                "es": "Alta capacidad de uso del usuario",
-                "pl": "Dodano możliwość użytkownika",
-                "zh-cn": "增强了用户功能"
-            },
-            "0.4.9": {
-                "en": "notifications about established and closed connections can be configured to be sent via a telegram adapter instance",
-                "de": "Benachrichtigungen über aufgebaute und geschlossene Verbindungen können so konfiguriert werden, dass sie über Telegram gesendet werden",
-                "ru": "настройки для отправки через Telegram уведомлений об установленных и закрытых соединениях",
-                "pt": "notificações sobre conexões estabelecidas e fechadas podem ser configuradas para serem enviadas por uma instância do adaptador de telegrama",
-                "nl": "meldingen over bestaande en gesloten verbindingen kunnen worden geconfigureerd om te worden verzonden via een instantie van een telegramadapter",
-                "fr": "les notifications relatives aux connexions établies et fermées peuvent être configurées pour être envoyées via une instance d'adaptateur de télégramme",
-                "it": "le notifiche sulle connessioni stabilite e chiuse possono essere configurate per essere inviate tramite un'istanza dell'adattatore del telegramma",
-                "es": "las notificaciones sobre conexiones establecidas y cerradas pueden configurarse para enviarse a través de una instancia de adaptador de telegrama",
-                "pl": "powiadomienia o nawiązanych i zamkniętych połączeniach można skonfigurować do wysyłania za pośrednictwem instancji adaptera telegramu",
-                "zh-cn": "可以将有关已建立和已关闭连接的通知配置为通过电报适配器实例发送"
-            },
-            "0.4.4": {
-                "en": "Closing tunnels in case server considers an agent as offline\nFixed timeout to query active connection status",
-                "de": "Tunnel schließen, falls der Server einen Agenten als offline betrachtet\nZeitüberschreitung beim Abfragen des aktiven Verbindungsstatus behoben",
-                "ru": "Закрытие туннелей в случае, если сервер считает агента автономным\nИсправлено время ожидания запроса активного состояния соединения",
-                "pt": "Fechando túneis no caso de o servidor considerar um agente como off-line\nTempo limite fixo para consultar o status da conexão ativa",
-                "nl": "Tunnels sluiten als een server een agent als offline beschouwt\nVaste time-out om actieve verbindingsstatus op te vragen",
-                "fr": "La fermeture de tunnels dans le cas où le serveur considère un agent comme étant hors ligne\nDélai d'expiration fixé pour interroger l'état de la connexion active",
-                "it": "Chiudere i tunnel nel caso in cui il server consideri un agente come offline\nRisolto il timeout per interrogare lo stato della connessione attiva",
-                "es": "Cierre de túneles en caso de que el servidor considere a un agente como fuera de línea\nTiempo de espera fijo para consultar el estado de conexión activa",
-                "pl": "Zamykanie tuneli w przypadku serwera traktuje agenta jako offline\nNaprawiono limit czasu na zapytanie o status aktywnego połączenia",
-                "zh-cn": "在案例服务器中关闭隧道会将代理视为脱机\n修复了查询活动连接状态的超时"
-            },
-            "0.4.2": {
-                "en": "agents will report own version by registration",
-                "de": "Agenten melden ihre eigene Version bei der Registrierung",
-                "ru": "Агенты сообщат свою версию при регистрации",
-                "pt": "agentes informarão a própria versão por registro",
-                "nl": "agenten rapporteren hun eigen versie door zich te registreren",
-                "fr": "les agents rapporteront leur propre version par enregistrement",
-                "it": "gli agenti riporteranno la propria versione mediante la registrazione",
-                "es": "Los agentes informarán de su propia versión mediante el registro.",
-                "pl": "agenci będą zgłaszać własną wersję poprzez rejestrację",
-                "zh-cn": "代理商将通过注册报告自己的版本"
-            },
-            "0.4.0": {
-                "en": "Made this adapter to be compatible with the new server",
-                "de": "Dieser Adapter wurde mit dem neuen Server kompatibel gemacht",
-                "ru": "Сделал этот адаптер совместимым с новым сервером",
-                "pt": "Feito este adaptador para ser compatível com o novo servidor",
-                "nl": "Maakte deze adapter compatibel met de nieuwe server",
-                "fr": "Fait cet adaptateur pour être compatible avec le nouveau serveur",
-                "it": "Ha reso questo adattatore compatibile con il nuovo server",
-                "es": "Hecho este adaptador para ser compatible con el nuevo servidor.",
-                "pl": "Ten adapter był zgodny z nowym serwerem",
-                "zh-cn": "使此适配器与新服务器兼容"
-            }
-        },
-        "mode": "daemon",
-        "platform": "Javascript/Node.js",
-        "loglevel": "info",
-        "keywords": [
-            "vpn",
-            "link",
-            "remote access"
-        ],
-        "connectionType": "cloud",
-        "dataSource": "push",
-        "main": "main.js",
+  "common": {
+    "name": "link",
+    "title": "Link VPN",
+    "titleLang": {
+      "en": "Link VPN"
+    },
+    "desc": {
+      "en": "Create VPN connection via ioBroker",
+      "de": "Erstellen Sie eine VPN-Verbindung über ioBroker",
+      "ru": "Создание VPN-соединения через ioBroker",
+      "pt": "Crie uma conexão VPN via ioBroker",
+      "nl": "Maak een VPN-verbinding via ioBroker",
+      "fr": "Créer une connexion VPN via ioBroker",
+      "it": "Crea una connessione VPN tramite ioBroker",
+      "es": "Crear una conexión VPN a través de ioBroker"
+    },
+    "version": "0.5.12",
+    "news": {
+      "0.5.12": {
+        "en": "Added warning if UUID is not unique",
+        "de": "Warnung hinzugefügt, wenn UUID nicht einzigartig ist",
+        "ru": "Добавлено предупреждение, если UUID не уникален",
+        "pt": "Adicionado aviso se UUID não é único",
+        "nl": "Een waarschuwing als UUID niet uniek is",
+        "fr": "Avertissement ajouté si UUID n'est pas unique",
+        "it": "Aggiunto avviso se UUID non è unico",
+        "es": "Advertencia agregada si UUID no es único",
+        "pl": "Oświadczenie, jeśli UUID nie jest unikalne",
+        "uk": "Попередження, якщо UUID не унікальний",
+        "zh-cn": "如果UID不是独有的警告,添加警告"
+      },
+      "0.5.11": {
+        "en": "Fixed the type of `info.connection` state",
+        "de": "Der Typ des `info.connection`-Status wurde korrigiert",
+        "ru": "Исправлен тип состояния `info.connection`",
+        "pt": "Corrigido o tipo de estado `info.connection`",
+        "nl": "Het type `info.connection`-status gerepareerd",
+        "fr": "Correction du type d'état `info.connection`",
+        "it": "Risolto il tipo di stato \"info.connection\"",
+        "es": "Se corrigió el tipo de estado `info.connection`",
+        "pl": "Poprawiono typ stanu `info.connection`",
+        "zh-cn": "修复了 `info.connection` 状态的类型"
+      },
+      "0.5.10": {
+        "en": "Ignore errors at 4:00 because of the server restart",
+        "de": "Ignorieren Sie Fehler um 4:00 Uhr aufgrund des Neustarts des Servers",
+        "ru": "Игнорировать ошибки в 4:00 из-за перезапуска сервера",
+        "pt": "Ignorar erros às 4:00 devido ao reinício do servidor",
+        "nl": "Negeer fouten om 4:00 uur omdat de server opnieuw is opgestart",
+        "fr": "Ignorer les erreurs à 4h00 en raison du redémarrage du serveur",
+        "it": "Ignora gli errori alle 4:00 a causa del riavvio del server",
+        "es": "Ignore los errores a las 4:00 debido al reinicio del servidor",
+        "pl": "Zignoruj błędy o 4:00 z powodu restartu serwera",
+        "zh-cn": "由于服务器重启，忽略了4:00的错误"
+      },
+      "0.5.9": {
+        "en": "added support for http endpoint configuration",
+        "de": "Unterstützung für die Konfiguration von http-Endpunkten hinzugefügt",
+        "ru": "добавлена поддержка конфигурации конечной точки http",
+        "pt": "suporte adicionado para configuração de terminal http",
+        "nl": "ondersteuning toegevoegd voor http-eindpuntconfiguratie",
+        "fr": "prise en charge supplémentaire de la configuration du point de terminaison http",
+        "it": "aggiunto supporto per la configurazione dell'endpoint http",
+        "es": "Soporte agregado para la configuración del punto final http",
+        "pl": "dodano obsługę konfiguracji punktu końcowego http",
+        "zh-cn": "添加了对HTTP端点配置的支持"
+      },
+      "0.5.8": {
+        "en": "disabled devices are excluded from registration",
+        "de": "deaktivierte Geräte sind von der Registrierung ausgeschlossen",
+        "ru": "отключенные устройства исключаются из регистрации",
+        "pt": "dispositivos desativados são excluídos do registro",
+        "nl": "uitgeschakelde apparaten zijn uitgesloten van registratie",
+        "fr": "les appareils désactivés sont exclus de l'enregistrement",
+        "it": "i dispositivi disabilitati sono esclusi dalla registrazione",
+        "es": "los dispositivos deshabilitados están excluidos del registro",
+        "pl": "wyłączone urządzenia są wyłączone z rejestracji",
+        "zh-cn": "禁用的设备不注册"
+      },
+      "0.5.7": {
+        "en": "telegram notifications and connection approval fixed",
+        "de": "Telegrammbenachrichtigungen und Verbindungsfreigabe behoben",
+        "ru": "исправлены уведомления о телеграмме и подтверждение соединения",
+        "pt": "notificações de telegrama e aprovação de conexão corrigidas",
+        "nl": "telegrammeldingen en verbindingsgoedkeuring vastgesteld",
+        "fr": "notifications de télégramme et approbation de connexion corrigées",
+        "it": "notifiche del telegramma e approvazione della connessione fisse",
+        "es": "notificaciones de telegramas y aprobación de conexión fijadas",
+        "pl": "naprawiono powiadomienia telegramowe i zatwierdzenie połączenia",
+        "zh-cn": "电报通知和连接批准已修复"
+      },
+      "0.5.6": {
+        "en": "Multi-factor connection approval\nImplemented the acknowledgment via telegram",
+        "de": "Multi-Faktor-Verbindungsgenehmigung\nQuittierung per Telegramm implementiert",
+        "ru": "Многофакторное утверждение соединения\nРеализовано подтверждение через телеграмму",
+        "pt": "Aprovação de conexão multifatorial\nImplementado o reconhecimento via telegrama",
+        "nl": "Goedkeuring van meerdere factoren\nImplementatie van de bevestiging via telegram",
+        "fr": "Approbation de connexion multi-facteurs\nImplémenter l'accusé de réception par télégramme",
+        "it": "Approvazione della connessione a più fattori\nImplementato il riconoscimento tramite telegramma",
+        "es": "Aprobación de conexión multifactor\nImplementado el reconocimiento por telegrama",
+        "pl": "Zatwierdzenie połączenia wieloskładnikowego\nWdrożono potwierdzenie za pomocą telegramu",
+        "zh-cn": "多因素连接批准\n通过电报进行确认"
+      }
+    },
+    "mode": "daemon",
+    "platform": "Javascript/Node.js",
+    "loglevel": "info",
+    "keywords": [
+      "vpn",
+      "link",
+      "remote access"
+    ],
+    "connectionType": "cloud",
+    "dataSource": "push",
+    "main": "main.js",
+    "enabled": true,
+    "authors": [
+      "gh-god",
+      "Bluefox <dogafox@gmail.com>"
+    ],
+    "restartSchedule": "0 4 * * *",
+    "compact": true,
+    "materialize": true,
+    "license": "CC-BY-NC-4.0",
+    "readme": "https://github.com/ioBroker/ioBroker.link/blob/master/README.md",
+    "icon": "link.png",
+    "extIcon": "https://raw.githubusercontent.com/ioBroker/ioBroker.link/master/admin/link.png",
+    "type": "communication",
+    "dependencies": [
+      {
+        "js-controller": ">=1.2.3"
+      }
+    ],
+    "stopTimeout": 10000
+  },
+  "native": {
+    "name": "",
+    "accessServerURI": "https://iobroker.link",
+    "accessServerPollInterval": 10,
+    "telegramAsk": false,
+    "telegramInstance": "",
+    "allowedUsers": [],
+    "proxyURI": "",
+    "devices": [
+      {
         "enabled": true,
-        "authors": [
-            "gh-god",
-            "Bluefox <dogafox@gmail.com>"
-        ],
-        "restartSchedule": "0 4 * * *",
-        "compact": true,
-        "materialize": true,
-        "license": "CC-BY-NC-4.0",
-        "readme": "https://github.com/ioBroker/ioBroker.link/blob/master/README.md",
-        "icon": "link.png",
-        "extIcon": "https://raw.githubusercontent.com/ioBroker/ioBroker.link/master/admin/link.png",
-        "type": "communication",
-        "dependencies": [
-            {
-                "js-controller": ">=1.2.3"
-            }
-        ],
-        "stopTimeout": 10000
-    },
-    "native": {
-        "name": "",
-        "accessServerURI": "https://iobroker.link",
-        "accessServerPollInterval": 10,
-        "telegramAsk": false,
-        "telegramInstance": "",
-        "allowedUsers": [],
-        "proxyURI": "",
-        "devices": [
-            {
-                "enabled": true,
-                "name": "ioBroker Admin",
-                "host": "localhost",
-                "protocol": "TCP",
-                "port": 8081
-            },
-            {
-                "enabled": true,
-                "name": "ioBroker Web",
-                "host": "localhost",
-                "protocol": "TCP",
-                "port": 8082
-            }
-        ]
-    },
-    "instanceObjects": [
-        {
-            "_id":  "info",
-            "type": "channel",
-            "common": {
-                "name": "Information"
-            },
-            "native": {}
-        },
-        {
-            "_id":  "info.connection",
-            "type": "state",
-            "common": {
-                "role":  "indicator.connection",
-                "name":  "Connected to cloud",
-                "type":  "boolean",
-                "read":  true,
-                "write": false
-            },
-            "native": {}
-        },
-        {
-            "_id":  "info.status",
-            "type": "state",
-            "common": {
-                "role":  "text",
-                "name":  "Client status",
-                "desc":  "This text will be send to cloud to indicate the client overall status. Empty is ok. Some text describes error.",
-                "type":  "string",
-                "read":  true,
-                "write": false
-            },
-            "native": {}
-        }
+        "name": "ioBroker Admin",
+        "host": "localhost",
+        "protocol": "TCP",
+        "port": 8081
+      },
+      {
+        "enabled": true,
+        "name": "ioBroker Web",
+        "host": "localhost",
+        "protocol": "TCP",
+        "port": 8082
+      }
     ]
+  },
+  "instanceObjects": [
+    {
+      "_id": "info",
+      "type": "channel",
+      "common": {
+        "name": "Information"
+      },
+      "native": {}
+    },
+    {
+      "_id": "info.connection",
+      "type": "state",
+      "common": {
+        "role": "indicator.connection",
+        "name": "Connected to cloud",
+        "type": "boolean",
+        "read": true,
+        "write": false
+      },
+      "native": {}
+    },
+    {
+      "_id": "info.status",
+      "type": "state",
+      "common": {
+        "role": "text",
+        "name": "Client status",
+        "desc": "This text will be send to cloud to indicate the client overall status. Empty is ok. Some text describes error.",
+        "type": "string",
+        "read": true,
+        "write": false
+      },
+      "native": {}
+    }
+  ]
 }

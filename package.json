@@ -1,7 +1,7 @@
 {
   "name": "iobroker.link",
   "description": "Create VPN connection via ioBroker.link server",
-  "version": "0.5.11",
+  "version": "0.5.12",
   "author": "Bluefox <dogafox@gmail.com>",
   "contributors": [
     "Bluefox <dogafox@gmail.com>",
@@ -31,11 +31,14 @@
     "ssh2": "^0.8.6"
   },
   "devDependencies": {
+    "@alcalzone/release-script": "^3.5.9",
+    "@alcalzone/release-script-plugin-iobroker": "^3.5.9",
+    "@alcalzone/release-script-plugin-license": "^3.5.9",
     "babel-core": "^6.26.3",
     "babel-minify": "^0.5.1",
-    "@babel/preset-env": "^7.7.4",
+    "@babel/preset-env": "^7.19.4",
     "babelify": "^10.0.0",
-    "browserify": "^16.5.0",
+    "browserify": "^17.0.0",
     "gulp": "^4.0.2",
     "gulp-javascript-obfuscator": "^1.1.6",
     "vinyl-source-stream": "^2.0.0",
@@ -45,10 +48,23 @@
     "url": "https://github.com/ioBroker/ioBroker.link/issues"
   },
   "main": "gulpfile.js",
+  "files": [
+    "admin/",
+    "io-package.json",
+    "LICENSE",
+    "main.js",
+    "lib/install.js",
+    "lib/utils.js"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepublish": "node node_modules/gulp/bin/gulp --gulpfile gulpfile.js default",
-    "postinstall": "node lib/install"
+    "build": "node node_modules/gulp/bin/gulp.js",
+    "postinstall": "node lib/install",
+    "release": "release-script",
+    "release-patch": "release-script patch --yes",
+    "release-minor": "release-script minor --yes",
+    "release-major": "release-script major --yes"
   },
   "license": "CC-BY-NC-4.0"
 }
