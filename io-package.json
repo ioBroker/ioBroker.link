@@ -122,7 +122,10 @@
     "restartSchedule": "0 4 * * *",
     "compact": true,
     "materialize": true,
-    "license": "CC-BY-NC-4.0",
+    "licenseInformation": {
+      "type": "free",
+      "license": "CC-BY-NC-4.0"
+    },
     "readme": "https://github.com/ioBroker/ioBroker.link/blob/master/README.md",
     "icon": "link.png",
     "extIcon": "https://raw.githubusercontent.com/ioBroker/ioBroker.link/master/admin/link.png",
