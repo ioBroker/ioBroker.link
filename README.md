@@ -205,7 +205,7 @@ Instead, provided them when prompted while establishing a connection.
 ## License
 Creative Common Attribution-NonCommercial (CC BY-NC)
 
-Copyright (c) 2018-2022 bluefox <dogafox@gmail.com>, gh-got
+Copyright (c) 2018-2025 bluefox <dogafox@gmail.com>, gh-got
 
 http://creativecommons.org/licenses/by-nc/4.0/
 
