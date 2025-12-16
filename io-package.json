@@ -1,7 +1,6 @@
 {
   "common": {
     "name": "link",
-    "title": "Link VPN",
     "titleLang": {
       "en": "Link VPN"
     },
