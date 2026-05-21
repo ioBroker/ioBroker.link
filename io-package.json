@@ -129,7 +129,7 @@
     "type": "communication",
     "dependencies": [
       {
-        "js-controller": ">=1.2.3"
+        "js-controller": ">=6.0.11"
       }
     ],
     "stopTimeout": 10000
