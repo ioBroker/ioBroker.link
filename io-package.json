@@ -121,7 +121,6 @@
     ],
     "restartSchedule": "0 4 * * *",
     "compact": true,
-    "materialize": true,
     "license": "CC-BY-NC-4.0",
     "readme": "https://github.com/ioBroker/ioBroker.link/blob/master/README.md",
     "icon": "link.png",
@@ -129,10 +128,13 @@
     "type": "communication",
     "dependencies": [
       {
-        "js-controller": ">=1.2.3"
+        "js-controller": ">=6.0.11"
       }
     ],
-    "stopTimeout": 10000
+    "stopTimeout": 10000,
+    "adminUI": {
+      "config": "materialize"
+    }
   },
   "native": {
     "name": "",

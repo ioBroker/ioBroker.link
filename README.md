@@ -161,6 +161,10 @@ Instead, provided them when prompted while establishing a connection.
 -->
 
 ## Changelog
+
+### **WORK IN PROGRESS**
+- (ioBroker-Bot) Adapter requires js-controller >= 6.0.11 now.
+
 ### 0.5.12 (2022-10-27)
 * (bluefox) Added warning if UUID is not unique
 
