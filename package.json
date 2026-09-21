@@ -28,7 +28,7 @@
     "portastic": "^1.0.1",
     "ps-tree": "^1.2.0",
     "request": "^2.88.2",
-    "ssh2": "^0.8.6"
+    "ssh2": "^1.17.0"
   },
   "devDependencies": {
     "@alcalzone/release-script": "^3.5.9",
