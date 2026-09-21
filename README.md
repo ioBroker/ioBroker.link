@@ -202,6 +202,8 @@ Instead, provided them when prompted while establishing a connection.
 ### 0.1.3 (2018-04-25)
 * (bluefox) Initial commit
 
+[Older changelogs can be found there](CHANGELOG_OLD.md)
+
 ## License
 Creative Common Attribution-NonCommercial (CC BY-NC)
 
