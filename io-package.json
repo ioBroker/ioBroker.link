@@ -114,7 +114,6 @@
     ],
     "connectionType": "cloud",
     "dataSource": "push",
-    "main": "main.js",
     "enabled": true,
     "authors": [
       "gh-god",
