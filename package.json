@@ -35,7 +35,7 @@
     "@alcalzone/release-script-plugin-iobroker": "^3.5.9",
     "@alcalzone/release-script-plugin-license": "^3.5.9",
     "babel-core": "^6.26.3",
-    "babel-minify": "^0.5.1",
+    "babel-minify": "^0.5.2",
     "@babel/preset-env": "^7.19.4",
     "babelify": "^10.0.0",
     "browserify": "^17.0.0",
