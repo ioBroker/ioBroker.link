@@ -19,7 +19,7 @@
     "home automation"
   ],
   "dependencies": {
-    "extract-zip": "^1.6.7",
+    "extract-zip": "^2.0.1",
     "http-proxy": "^1.18.1",
     "https-proxy-agent": "^2.2.2",
     "jwt-simple": "^0.5.6",
