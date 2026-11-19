@@ -22,7 +22,7 @@
     "extract-zip": "^1.6.7",
     "http-proxy": "^1.18.1",
     "https-proxy-agent": "^2.2.2",
-    "jwt-simple": "^0.5.6",
+    "jwt-simple": "^0.6.1",
     "node-forge": "^0.10.0",
     "node-rsa": "^1.1.1",
     "portastic": "^1.0.1",
